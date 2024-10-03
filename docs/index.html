@@ -35,6 +35,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CINR</h1>
           <h1 class="title is-1 publication-title">Convolutional Implicit Neural Representation of pathology whole-slide images</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -110,38 +111,19 @@
     </div>
   </div>
 </section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/example17_.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        CINR
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/example17_.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        
+<section class="section">
+  <div class=" is-max-desktop">
+    <!-- Abstract. -->
+    <div class=" is-centered has-text-centered">
+      <div class=" is-four-fifths">
+        <h2 class="title is-3">Differences between original and reconstructed images</h2>
+        <img src="../image/fig4-1.png">
       </div>
     </div>
+    <!--/ Abstract. -->
   </div>
 </section>
-
+<hr>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -165,13 +147,101 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-
+    
   </div>
 </section>
 
+<section class="section"></section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class=" is-centered ">
+      <h2 class="title is-3 has-text-centered">CINR Model</h2>
+      <hr>
+      <h3 class="title">Position Encoding</h3>
+      <img src="../image/enc-1.png">
+      <p>
+        Multi-resolution Hash Grid Encoding sets up L 2D grids across the domain, with each grid representing a different level of resolution. It encodes each grid point via a hash table of size T, where each index contains F trainable parameters (features), represented as a feature vector. 
+      </p>
+      <h3 class="title">Convolutional Implicit Neural Representation, CINR Model</h3>
+      <img src="../image/model1-1.png">
+
+      <p>
+        The tensor position is processed using two parallel-network. The first flow, a standard MLP with two layers, focuses features of the target position, whereas the second flow, a CNN with and 3 × 3 kernels, encompasses the features from the surrounding target position. The outputs from these two flows are merged and passed additional CNN layer to integrate the features, culminating in the of the target values.
+      </p>
+      <br>
+      <hr>
+      <br>
+
+      <div class="columns is-centered" style="margin-bottom: 5%;">
+        <div style="width: 40% " class="column">
+          <img src="../image/model2-1.png">
+
+        </div>
+      
+        <div class="column" style="width: 60%; vertical-align; middle;">
+          <br>
+          <h3 class="title is-4">Fully Connected Layer :</h3>
+          <p>Directly maps coordinates to pixel values without spatial context. </p>
+          <br>
+          <h3 class="title is-4">Convolution Layer :</h3>
+          <p>Uses convolution to capture spatial relationships between pixels, effectively representing high-frequency details.</p>
+        </div>
+      </div>
+      
+      
+      
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class=" is-centered ">
+
+      <h2 class="title is-3 has-text-centered">Result</h2>
+      <hr>
+      <h3 class="title is-4">Reconstructed Results - Qualitative evaluation</h3>
+      <img src="../image/fig_diff_reboot2-1.png">
+      
+      <h3 class="title is-4">Reconstructed Results - Quantitative evaluation</h3>
+      <img src="../image/fig3-eps-converted-to-1.png">
+
+      <h3 class="title is-4">CINR based Image zoom in</h3>
+      <class class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/example17_.mp4"
+                  type="video/mp4">
+        </video>
+        
+        </class>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/example17_.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -195,8 +265,8 @@
 
       
 
-  </div>
-</section>
+  <!-- </div>
+</section> --> 
 
 
 <section class="section" id="BibTeX">
@@ -208,7 +278,7 @@
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021}, -->
-}</code></pre>
+</code></pre>
   </div>
 </section>
 
