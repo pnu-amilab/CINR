@@ -117,7 +117,7 @@
     <div class=" is-centered has-text-centered">
       <div class=" is-four-fifths">
         <h2 class="title is-3">Differences between original and reconstructed images</h2>
-        <img src="../image/fig4-1.png">
+        <img src="./static/images/fig4-1.png">
       </div>
     </div>
     <!--/ Abstract. -->
@@ -159,12 +159,12 @@
       <h2 class="title is-3 has-text-centered">CINR Model</h2>
       <hr>
       <h3 class="title">Position Encoding</h3>
-      <img src="../image/enc-1.png">
+      <img src="./static/images/enc-1.png">
       <p>
         Multi-resolution Hash Grid Encoding sets up L 2D grids across the domain, with each grid representing a different level of resolution. It encodes each grid point via a hash table of size T, where each index contains F trainable parameters (features), represented as a feature vector. 
       </p>
       <h3 class="title">Convolutional Implicit Neural Representation, CINR Model</h3>
-      <img src="../image/model1-1.png">
+      <img src="./static/images/model1-1.png">
 
       <p>
         The tensor position is processed using two parallel-network. The first flow, a standard MLP with two layers, focuses features of the target position, whereas the second flow, a CNN with and 3 × 3 kernels, encompasses the features from the surrounding target position. The outputs from these two flows are merged and passed additional CNN layer to integrate the features, culminating in the of the target values.
@@ -175,7 +175,7 @@
 
       <div class="columns is-centered" style="margin-bottom: 5%;">
         <div style="width: 40% " class="column">
-          <img src="../image/model2-1.png">
+          <img src="./static/images/model2-1.png">
 
         </div>
       
@@ -203,10 +203,10 @@
       <h2 class="title is-3 has-text-centered">Result</h2>
       <hr>
       <h3 class="title is-4">Reconstructed Results - Qualitative evaluation</h3>
-      <img src="../image/fig_diff_reboot2-1.png">
+      <img src="./static/images/fig_diff_reboot2-1.png">
       
       <h3 class="title is-4">Reconstructed Results - Quantitative evaluation</h3>
-      <img src="../image/fig3-eps-converted-to-1.png">
+      <img src="./static/images/fig3-eps-converted-to-1.png">
 
       <h3 class="title is-4">CINR based Image zoom in</h3>
       <class class="hero-body">
