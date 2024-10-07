@@ -1,9 +1,11 @@
 # CINR
 # CINR Convolutional Implicit Neural Representation of pathology whole-slide images
 DongEon Lee, Chunsu Park, SeonYeong Lee, SiYeoul Lee, MinWoo Kim
+
 | [Project Page](https://pnu-amilab.github.io/CINR/) 
-| [Paper]()
+| [Paper](https://doi.org/10.1007/978-3-031-72104-5_19)
 | [Project Page](https://github.com/pnu-amilab/CINR) 
+|
 
 # Overview
 <img src="image/enc-1.png" height="342"/><img src="image/model1-1.png" height="342"/>
