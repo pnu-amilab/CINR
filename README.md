@@ -4,7 +4,7 @@ DongEon Lee, Chunsu Park, SeonYeong Lee, SiYeoul Lee, MinWoo Kim
 
 | [Project Page](https://pnu-amilab.github.io/CINR/) 
 | [Paper](https://doi.org/10.1007/978-3-031-72104-5_19)
-| [Project Page](https://github.com/pnu-amilab/CINR) 
+| [GitHub](https://github.com/pnu-amilab/CINR) 
 |
 
 # Overview
